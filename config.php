@@ -1,3 +1,4 @@
+<!-- arquivo para fazer a conexão/integração com o bd-->
 <?php
 
     $dbHost = 'Localhost';
@@ -7,4 +8,13 @@
 
     $conexao = new mysqli($dbHost, $dbUsername,$dbPassword, $dbName);
 
+    // if ($conexao->connect_ernno)
+    //{
+    //     echo "Erro";
+    //}
+    // else{
+    //      echo "Conectado com sucesso.";
+    //  }
+    // teste pra ver se conectou ou não ao bd
+    
     ?>
