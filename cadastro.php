@@ -37,13 +37,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <style>
-        body{
+        body
+        {
+            
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            /*CSS é um luxo, mas quem não tem cão, caça com gato. Melhor que deixar tudo branco ou monotono kk */
         }
-        .box{
+        .box{ 
             color: white;
             position: absolute;
+            /*para ocupar somente o próprio espaço da box */
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
@@ -55,6 +59,7 @@
 
         fieldset{
             border: 3px solid dodgerblue;
+            /*Linhazinha azul ao redor da box */
         }
 
         legend{
@@ -63,6 +68,7 @@
             text-align: center;
             background-color: dodgerblue;
             border-radius: 8px;
+            /*Ajustes no título de "Cadastro" na parte superior da box */
         }
 
         .inputBox{
@@ -78,6 +84,7 @@
             font-size: 15px;
             width: 100%;
             letter-spacing: 2px;
+            /* Seria eu, o Picasso do CSS?! kkkkk mas ta apresentável, convenhamos. */
         }
 
         .labelInput{
@@ -86,6 +93,7 @@
             left: 0px;
             pointer-events: none;
             transition: .5px;
+            /*Transformei os labels em uma classe, para poder gerar essa animação */
         }
 
         .inputUser:focus ~ .labelInput,
@@ -118,13 +126,12 @@
     </style>
 </head>
 <body>
+<img  width="50px" src = "https://conteudo-site.wevo.io/wp-content/uploads/2021/11/wevo-a-jitterbit-company-01.png"/>
     <div class="box">
         <form action="cadastro.php" method="POST">
             <fieldset>
-
                 <legend> <b> Cadastro </b> </legend>
                 <br>
-
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput"> Nome Completo </label>
