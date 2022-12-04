@@ -1,3 +1,11 @@
+<?php
+    if(isset($_POST['submit']))
+    { 
+        print_r($_POST['nome']);
+        print_r($_POST['email']);
+        print_r($_POST['telefone']);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +96,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="tela-de-cadastro.php" method="POST">
             <fieldset>
 
                 <legend> <b> Cadastro </b> </legend>
