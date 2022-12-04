@@ -126,7 +126,6 @@
     </style>
 </head>
 <body>
-<img  width="50px" src = "https://conteudo-site.wevo.io/wp-content/uploads/2021/11/wevo-a-jitterbit-company-01.png"/>
     <div class="box">
         <form action="cadastro.php" method="POST">
             <fieldset>
