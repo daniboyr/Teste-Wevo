@@ -24,9 +24,10 @@
     $data_nascimento = $_POST['data_nascimento'];
     $genero = $_POST['genero'];
     $cpf = $_POST['cpf'];
-
+    //adicionando valores as variáveis através dos parâmetros
     $result = mysqli_query($conexao, "INSERT INTO clientes (Nome, Email, Telefone, CPF, DataNascimento, Genero) VALUES ('$nome', '$email', '$telefone', '$cpf', '$data_nascimento', '$genero')");
     }
+    //integrando os valores ao bd
 ?>
 
 <!DOCTYPE html>
@@ -177,5 +178,5 @@
     </div>
     
 </body>
-<!--  Design não é o meu forte mas até que ficou bonitinho e organizado hein, recrutador -->
+<!--  Design não é o meu forte mas até que ficou bonitinho e organizado hein, recrutador. -->
 </html>
