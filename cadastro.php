@@ -31,7 +31,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -176,6 +176,7 @@
             </fieldset>
         </form>
     </div>
+    
     
 </body>
 <!--  Design não é o meu forte mas até que ficou bonitinho e organizado hein, recrutador. -->
