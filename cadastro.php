@@ -1,4 +1,4 @@
- <?php
+<?php
     if (isset($_POST['submit']))
     {
     //teste pra ver se esta tudo salvando
@@ -24,10 +24,13 @@
     $data_nascimento = $_POST['data_nascimento'];
     $genero = $_POST['genero'];
     $cpf = $_POST['cpf'];
+    $Senha = $_POST['senha'];
+    
     //adicionando valores as variáveis através dos parâmetros
-    $result = mysqli_query($conexao, "INSERT INTO clientes (Nome, Email, Telefone, CPF, DataNascimento, Genero) VALUES ('$nome', '$email', '$telefone', '$cpf', '$data_nascimento', '$genero')");
+    $result = mysqli_query($conexao, "INSERT INTO clientes (Nome, Email, Telefone, CPF, DataNascimento, Genero, Senha) VALUES ('$nome', '$email', '$telefone', '$cpf', '$data_nascimento', '$genero', '$Senha')");
+    header('Location: login.php');
     }
-    //integrando os valores ao bd
+    //integrando os valores das variaveis ao bd
 ?>
 
 <!DOCTYPE html>
@@ -127,6 +130,7 @@
     </style>
 </head>
 <body>
+<a href="home.php"> Voltar </a>
     <div class="box">
         <form action="cadastro.php" method="POST">
             <fieldset>
@@ -141,6 +145,12 @@
                 <div class="inputBox">
                     <input type="text" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput"> Email </label>
+                </div>
+                <br>
+                <br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="Senha" class="inputUser" required>
+                    <label for="Senha" class="labelInput"> Senha </label>
                 </div>
                 <br>
                 <br>
