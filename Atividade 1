@@ -1,10 +1,10 @@
 
-CREATE TABLE cadastro (
-    id int(10),
-    nome VARCHAR(20),
-    cpf int(20),
-    email CHAR(50),
-    telefone int(20),
-     sexo  VARCHAR(20),
-     datanascimento DATE
+CREATE TABLE clientes(
+	ID INT,
+	Nome VARCHAR(100),
+    Email VARCHAR(100),
+    CPF INT(11),
+    Telefone INT(11),
+    Sexo VARCHAR (50),
+    DataNascimento DATE
 );
