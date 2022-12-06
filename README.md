@@ -1,5 +1,5 @@
 # Teste-Wevo
-Este repositório será utilizado para armazenar as respostas dos testes de conhecimento do processo seletivo da empresa Wevo.
+Este repositório será utilizado para armazenar as respostas da 1ª etaoa do seletivo da empresa Wevo.
 
 Em tempo, informo que desenvolvi um layout para cadastro de clientes e vinculei, as informações inseridas pelos usuários, á um banco de dados MySQL.
 Utilizei as linguagens PHP, HTML e MySQL. 
